@@ -13,24 +13,23 @@ def add_todo():
 
 st.title('My Todo app')
 
-
-st.text_input(label='', placeholder='Enter todo',
-              on_change=add_todo,key='new_todo')
-
 st.subheader('This is a subheading')
 st.write('This app is to increase your <b>productivity</b>',
          unsafe_allow_html=True)  #unsafeallowhtml allows html to be used in the string
 
 
 
-for index,todo in enumerate(todos):
-    checkbox = st.checkbox(todo, key=todo)
-    if checkbox:
-        todos.pop(index)
-        functions.write_todos(todos)
-        del st.session_state[todo]
-        st.rerun()
+for todo in todos:
+    st.checkbox(todo)
+    #if checkbox:
+     #   todos.pop(index)
+      #  functions.write_todos(todos)
+       # del st.session_state[todos]
+        #st.rerun()
 
+
+st.text_input(label='', placeholder='Add the new todo',
+              on_change=add_todo,key='new_todo')
 
 
 
