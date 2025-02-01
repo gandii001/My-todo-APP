@@ -2,7 +2,7 @@
 # doc strings are used for commenting and explaining internally what a function is for
 
 
-def get_todos(filepath="/home/gandii/PycharmProjects/pythonProject310/mytodos.txt"):
+def get_todos(filepath="//home/gandii/PycharmProjects/pythonProject310/mytodos.txt"):
     # example of a doc string
     # """ This function is for reading out the content of a file """
 
