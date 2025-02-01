@@ -2,7 +2,7 @@
 # doc strings are used for commenting and explaining internally what a function is for
 
 
-def get_todos(filepath="/home/gandii/Documents/pythonProjects/todos.txt"):
+def get_todos(filepath="/home/gandii/PycharmProjects/pythonProject310/mytodos.txt"):
     # example of a doc string
     # """ This function is for reading out the content of a file """
 
@@ -14,7 +14,7 @@ def get_todos(filepath="/home/gandii/Documents/pythonProjects/todos.txt"):
 # help(get_todos)
 
 
-def write_todos(todos_arg, filepath= "/home/gandii/Documents/pythonProjects/todos.txt"):
+def write_todos(todos_arg, filepath= "/home/gandii/PycharmProjects/pythonProject310/mytodos.txt"):
     with open(filepath, 'w') as file_local:
         file_local.writelines(todos_arg)
 
